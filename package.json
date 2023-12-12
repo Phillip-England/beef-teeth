@@ -1,0 +1,16 @@
+{
+  "name": "beef-teeth",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "dev": "php -S localhost:8080",
+    "tailwind": "tailwind -i ./public/css/input.css -o ./public/css/output.css --watch",
+    "bundle": "bun build ./src/client/index.ts --outdir ./public/js --watch"
+  }
+}
